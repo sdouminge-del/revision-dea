@@ -1,4 +1,4 @@
-/* Donnees generees depuis le dossier APPLI. */
+/* Donnees generees depuis le dossier APPLI. Fiches uniquement, sans supports Bloc complets. */
 window.DEA_FICHES = [
   {
     "id": "fiche-0bf86dc28f",
@@ -6,7 +6,6 @@ window.DEA_FICHES = [
     "path": "Autre fiche de révisoin/📚 FICHE DE TRAVAIL – TRAITEMENTS & EFFETS.pdf",
     "source": "Autre fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "traitements"
     ]
@@ -17,7 +16,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 3/Fiche approfondie/🧠 ESPACE DE TRAVAIL — COMMUNICATION.pdf",
     "source": "Fiche approfondie",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
     ]
@@ -28,7 +26,6 @@ window.DEA_FICHES = [
     "path": "Fiche A 5/A5 APPAREIL RESPIRATOIRE.pdf",
     "source": "Fiche A 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "respiratoire",
       "anatomie",
@@ -41,7 +38,6 @@ window.DEA_FICHES = [
     "path": "A5 THERMES MEDICAL (1).pdf",
     "source": "Dossier principal",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -52,7 +48,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 4  Appareil Neurologique Et Locomoteur/Anatomie-physiologie de l’appareil locomoteur.pdf",
     "source": "Fiche 4 Appareil Neurologique Et Locomoteur",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "neurologique",
       "locomoteur",
@@ -66,7 +61,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/AXE 1 — LES BASES DE LA COMMUNICATION.pdf",
     "source": "fiche revision B1M1",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
     ]
@@ -77,7 +71,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 Module 2/Fiche de Révisions/AXE 1 — PRINCIPES DE BASE.pdf",
     "source": "Fiche de revisions",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -88,7 +81,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 3/Fiche version 2/AXE 1 — RÔLE SOIGNANT DE L’AMBULANCIER &.pdf",
     "source": "Fiche version 2",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -99,7 +91,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 3/Fiche version 2/AXE 2 — DISPOSITIFS MÉDICAUX  DÉFINITIONS & RÔLE DE L’AMBULA.pdf",
     "source": "Fiche version 2",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "materiel"
     ]
@@ -110,7 +101,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/AXE 2 — LES OUTILS DE COMMUNICATION.pdf",
     "source": "fiche revision B1M1",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
     ]
@@ -121,7 +111,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 Module 2/Fiche de Révisions/AXE 2 — MANUTENTION DU PATIENT ET POSITIONS.pdf",
     "source": "Fiche de revisions",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "manutention"
     ]
@@ -132,7 +121,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/AXE 3 — INTERROGATOIRE.pdf",
     "source": "fiche revision B1M1",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication",
       "bilan"
@@ -144,7 +132,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 Module 2/Fiche de Révisions/AXE 3 — MATÉRIEL DE MANUTENTION ET DE TRANSFERT.pdf",
     "source": "Fiche de revisions",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "manutention",
       "materiel"
@@ -156,7 +143,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 3/Fiche version 2/AXE 3 — SURVEILLANCE DES DISPOSITIFS MÉDICAUX PAR BESOIN.pdf",
     "source": "Fiche version 2",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "materiel"
     ]
@@ -167,7 +153,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 3/Fiche version 2/AXE 4 — DIGNITÉ.pdf",
     "source": "Fiche version 2",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -178,7 +163,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/AXE 4 — DROITS DU PATIENT ET SECRET PROFESSIONNEL.pdf",
     "source": "fiche revision B1M1",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "droits"
     ]
@@ -189,7 +173,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 Module 2/Fiche de Révisions/AXE 4 — TECHNIQUES DE MANUTENTION (LOGIQUE DES GESTES).pdf",
     "source": "Fiche de revisions",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "manutention"
     ]
@@ -200,7 +183,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/AXE 4.1 — Droits du patient et secret professionnel.pdf",
     "source": "fiche revision B1M1",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "droits"
     ]
@@ -211,7 +193,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 Module 2/Fiche de Révisions/AXE 5 — BRANCARDAGE ET MISE À BORD.pdf",
     "source": "Fiche de revisions",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "manutention"
     ]
@@ -222,7 +203,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/AXE 5 — COMMUNICATION ADAPTÉE AUX PUBLICS ET SITUATIONS PART.pdf",
     "source": "fiche revision B1M1",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
     ]
@@ -233,7 +213,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 3/Fiche version 2/AXE 5 — QUALITÉ ET SÉCURITÉ DES SOINS.pdf",
     "source": "Fiche version 2",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "hygiene"
     ]
@@ -244,7 +223,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 3/Fiche version 2/AXE 6 — PRÉVENTION ET ÉVALUATION DE LA DOULEUR.pdf",
     "source": "Fiche version 2",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "douleur"
@@ -256,7 +234,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 Module 2/Fiche de Révisions/AXE 6 — SITUATIONS PARTICULIÈRES & PATIENTS PORTEURS DE.pdf",
     "source": "Fiche de revisions",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "manutention"
     ]
@@ -267,40 +244,6 @@ window.DEA_FICHES = [
     "path": "Fiche A 5/B1M1 AUTRE A5.pdf",
     "source": "Fiche A 5",
     "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "fiche a5"
-    ]
-  },
-  {
-    "id": "fiche-f6d34d794b",
-    "title": "Bloc 1 Module 1",
-    "path": "Fiche A 5/Bloc 1 Module 1.pdf",
-    "source": "Fiche A 5",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "fiche a5"
-    ]
-  },
-  {
-    "id": "fiche-3d626ab3a8",
-    "title": "BLOC 1 MODULE 2",
-    "path": "Fiche A 5/BLOC 1 MODULE 2.pdf",
-    "source": "Fiche A 5",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "fiche a5"
-    ]
-  },
-  {
-    "id": "fiche-d1b639241d",
-    "title": "Bloc 1 Module 3",
-    "path": "Fiche A 5/Bloc 1 Module 3.pdf",
-    "source": "Fiche A 5",
-    "format": "PDF",
-    "isSupport": false,
     "tags": [
       "fiche a5"
     ]
@@ -311,7 +254,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 1.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -322,7 +264,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 2.1pdf.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -333,7 +274,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 2.2pdf.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -344,7 +284,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 2.3.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -355,7 +294,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 2.4pdf.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -366,7 +304,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 3.1pdf.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -377,7 +314,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 3.2.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -388,7 +324,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 3.3pdf.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -399,7 +334,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 4pdf.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -410,7 +344,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 5.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -421,7 +354,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 6.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -432,7 +364,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 7.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -443,7 +374,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 8.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -454,31 +384,8 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 5/Bloc 2 – Module 5 – Fiche 9.pdf",
     "source": "Bloc 2 Module 5",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
-    ]
-  },
-  {
-    "id": "fiche-2606a20ca5",
-    "title": "Bloc 2 Module 4 A5",
-    "path": "Fiche A 5/Bloc 2 Module 4 A5.pdf",
-    "source": "Fiche A 5",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "fiche a5"
-    ]
-  },
-  {
-    "id": "fiche-51d971f3b1",
-    "title": "Bloc 2 Module 5 A5",
-    "path": "Fiche A 5/Bloc 2 Module 5 A5.pdf",
-    "source": "Fiche A 5",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "fiche a5"
     ]
   },
   {
@@ -487,7 +394,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 1.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -498,7 +404,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 10.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -509,7 +414,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 11.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -520,7 +424,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 12.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -531,7 +434,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 2.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -542,7 +444,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 3– Prévention Du Risque Infectieux _ Aes, Infections Nosocomiales, Bmr_bhre.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "hygiene",
       "urgence"
@@ -554,7 +455,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 4.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -565,7 +465,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 5.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -576,7 +475,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 6.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -587,7 +485,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 7.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -598,7 +495,6 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 8.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -609,20 +505,8 @@ window.DEA_FICHES = [
     "path": "Bloc 4 Module 8/Bloc 4 – Module 8 – Fiche 9.pdf",
     "source": "Bloc 4 Module 8",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
-    ]
-  },
-  {
-    "id": "fiche-adb7269e0a",
-    "title": "Bloc 4 Module 8",
-    "path": "Fiche A 5/Bloc 4 Module 8.pdf",
-    "source": "Fiche A 5",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "fiche a5"
     ]
   },
   {
@@ -631,7 +515,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 9/Bloc 5 – Module 9 _ Fiche 2.pdf",
     "source": "Bloc 5 Module 9",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -642,7 +525,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 9/Bloc 5 – Module 9 _ Fiche 3.pdf",
     "source": "Bloc 5 Module 9",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -653,7 +535,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 9/Bloc 5 – Module 9 _ Fiche 4.pdf",
     "source": "Bloc 5 Module 9",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -664,7 +545,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 9/Bloc 5 – Module 9 _ Fiche 5.pdf",
     "source": "Bloc 5 Module 9",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -675,7 +555,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 9/Bloc 5 – Module 9 _ Fiche 6.pdf",
     "source": "Bloc 5 Module 9",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -686,7 +565,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 9/Bloc 5 – Module 9 _ Fiche 7.pdf",
     "source": "Bloc 5 Module 9",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -697,31 +575,8 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 9/Bloc 5 – Module 9 _ Fiche 8.pdf",
     "source": "Bloc 5 Module 9",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
-    ]
-  },
-  {
-    "id": "fiche-e2af8d87d0",
-    "title": "BLOC 5 Module 10",
-    "path": "Fiche A 5/BLOC 5 Module 10.pdf",
-    "source": "Fiche A 5",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "fiche a5"
-    ]
-  },
-  {
-    "id": "fiche-a3eb05a47b",
-    "title": "Bloc 5 Module 9",
-    "path": "Fiche A 5/Bloc 5 Module 9.pdf",
-    "source": "Fiche A 5",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "fiche a5"
     ]
   },
   {
@@ -730,7 +585,6 @@ window.DEA_FICHES = [
     "path": "Autre fiche de révisoin/Cahier De Travail – Anatomie (bases Utiles Au Bilan).pdf",
     "source": "Autre fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "anatomie"
@@ -742,7 +596,6 @@ window.DEA_FICHES = [
     "path": "Autre fiche de révisoin/Cahier De Travail – Termes Médicaux Et Définitions (dea) (3).pdf",
     "source": "Autre fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -753,7 +606,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/Gestion du conflit/Charte de la bientraitance.pdf",
     "source": "Gestion du conflit",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication",
       "droits"
@@ -765,7 +617,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/Gestion du conflit/Contexte de maltraitance chez l’enfant.pdf",
     "source": "Gestion du conflit",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
     ]
@@ -776,86 +627,8 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/Gestion du conflit/Contexte de maltraitance chez la personne âgée.pdf",
     "source": "Gestion du conflit",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
-    ]
-  },
-  {
-    "id": "fiche-04c3645f55",
-    "title": "diploma-cert 69jipaXdzd",
-    "path": "E-santé/diploma-cert_69jipaXdzd.pdf",
-    "source": "E-santé",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "e-sante"
-    ]
-  },
-  {
-    "id": "fiche-3c8f4f3d80",
-    "title": "diploma-cert BHs3HLHk3n",
-    "path": "E-santé/diploma-cert_BHs3HLHk3n.pdf",
-    "source": "E-santé",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "e-sante"
-    ]
-  },
-  {
-    "id": "fiche-eb3c3517d9",
-    "title": "diploma-cert hZZ6wT4v69",
-    "path": "E-santé/diploma-cert_hZZ6wT4v69.pdf",
-    "source": "E-santé",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "e-sante"
-    ]
-  },
-  {
-    "id": "fiche-e6db31856c",
-    "title": "diploma-cert hZZ6wT4v69 (1)",
-    "path": "E-santé/diploma-cert_hZZ6wT4v69 (1).pdf",
-    "source": "E-santé",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "e-sante"
-    ]
-  },
-  {
-    "id": "fiche-f0a739fc39",
-    "title": "diploma-cert OBra9wQ2SY",
-    "path": "E-santé/diploma-cert_OBra9wQ2SY.pdf",
-    "source": "E-santé",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "e-sante"
-    ]
-  },
-  {
-    "id": "fiche-e5770513c6",
-    "title": "diploma-cert pdcR-7Ie83",
-    "path": "E-santé/diploma-cert_pdcR-7Ie83.pdf",
-    "source": "E-santé",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "e-sante"
-    ]
-  },
-  {
-    "id": "fiche-9b5c5b2753",
-    "title": "diploma-cert wuWxoNypaT",
-    "path": "E-santé/diploma-cert_wuWxoNypaT.pdf",
-    "source": "E-santé",
-    "format": "PDF",
-    "isSupport": false,
-    "tags": [
-      "e-sante"
     ]
   },
   {
@@ -864,7 +637,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 3/Fiche approfondie/Fiche — Grille Aggir (autonomie).pdf",
     "source": "Fiche approfondie",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -875,7 +647,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 3/Fiche approfondie/Fiche — Mots Mnémotechniques Dea (bloc 1 Module 3).pdf",
     "source": "Fiche approfondie",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -886,7 +657,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 1 état clinique/Fiche 1 Bloc 2 – Module 4 – Appréciation de l’état clinique du patie.pdf",
     "source": "Fiche 1 état clinique",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -897,7 +667,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 1 Bloc 5 – Module 10 – Travail en équipe.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -908,7 +677,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 10 Bloc 5 – Module 10 – Travail en équipe.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -919,7 +687,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 11 Bloc 5 – Module 10 – Travail en équipe1.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -930,7 +697,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 12 Bloc 5 – Module 10 – Travail en équipe1.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -941,7 +707,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 2 Bloc 5 – Module 10 – Travail en équipe.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -952,7 +717,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 2 circulatoire/FICHE 2– APPAREIL CIRCULATOIRE BLOC 2 – MODULE 4.pdf",
     "source": "Fiche 2 circulatoire",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "circulatoire",
       "anatomie"
@@ -964,7 +728,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 3 APPAREIL RESPIRATOIRE/FICHE 3 Bloc 2 module 4 Appareil respiratoire.pdf",
     "source": "Fiche 3 APPAREIL RESPIRATOIRE",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "respiratoire",
       "anatomie"
@@ -976,7 +739,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 3 Bloc 5 – Module 10 – Travail en équipe pluriprofessionnelle.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -987,7 +749,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 3 APPAREIL RESPIRATOIRE/FICHE 3.1 Physiopathologie et sémiologie des maladies respiratoires.pdf",
     "source": "Fiche 3 APPAREIL RESPIRATOIRE",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "respiratoire",
       "anatomie"
@@ -999,7 +760,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 3 APPAREIL RESPIRATOIRE/FICHE 3.2  BPCO et insuffisance respiratoire chronique.pdf",
     "source": "Fiche 3 APPAREIL RESPIRATOIRE",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "respiratoire",
       "anatomie"
@@ -1011,7 +771,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 3 APPAREIL RESPIRATOIRE/FICHE 3.3 Allergies respiratoires.pdf",
     "source": "Fiche 3 APPAREIL RESPIRATOIRE",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "respiratoire",
       "anatomie"
@@ -1023,7 +782,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 3 APPAREIL RESPIRATOIRE/FICHE 3.3 Bronchite.pdf",
     "source": "Fiche 3 APPAREIL RESPIRATOIRE",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "respiratoire",
       "anatomie"
@@ -1035,7 +793,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 3 APPAREIL RESPIRATOIRE/FICHE 3.4 Mucoviscidose.pdf",
     "source": "Fiche 3 APPAREIL RESPIRATOIRE",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "respiratoire",
       "anatomie"
@@ -1047,7 +804,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 3 APPAREIL RESPIRATOIRE/FICHE 3.5 Cancer pulmonaire et métastases pulmonaires.pdf",
     "source": "Fiche 3 APPAREIL RESPIRATOIRE",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "respiratoire",
       "anatomie"
@@ -1059,7 +815,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 3 APPAREIL RESPIRATOIRE/FICHE 3.6 Trachéotomie.pdf",
     "source": "Fiche 3 APPAREIL RESPIRATOIRE",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "respiratoire",
       "anatomie"
@@ -1071,7 +826,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 4 Bloc 5 – Module 10 – Travail en équipe.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -1082,7 +836,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.1 — Construction d’une fiche bilan.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan"
     ]
@@ -1093,7 +846,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.10 — Fréquence respiratoire.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "respiratoire"
@@ -1105,7 +857,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.11 — Saturation en oxygène.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "respiratoire"
@@ -1117,7 +868,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.12— Transmission du recueil clinique et para-clinique par écrit et oral.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan"
     ]
@@ -1128,7 +878,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.2 — Examen clinique  l'interrogatoire.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication",
       "bilan"
@@ -1140,7 +889,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.3 — Examen clinique Examen physique Appréciation de la conscience.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "neurologique"
@@ -1152,7 +900,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.4 — Examen clinique examen physique appréciation de la fonction circulatoire.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "circulatoire"
@@ -1164,7 +911,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.5 — Examen clinique fonction ventilatoire.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "respiratoire"
@@ -1176,7 +922,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.6 — Examen clinique évaluation de la douleur.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "douleur"
@@ -1188,7 +933,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.7 — Examen para-clinique.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan"
     ]
@@ -1199,7 +943,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.8 — Pression artérielle.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "circulatoire"
@@ -1211,7 +954,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/Fiche 5.9 — Fréquence cardiaque.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "circulatoire"
@@ -1223,7 +965,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 5Bloc 5 – Module 10 – Travail en équipe1.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -1234,7 +975,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 6 Bloc 5 – Module 10 – Travail en équipe pluriprofessionnelle.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -1245,7 +985,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 6 /Fiche 6 Source de travail.pdf",
     "source": "Fiche 6",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -1256,7 +995,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 6 /Fiche 6.1 — Les prélèvements stériles.pdf",
     "source": "Fiche 6",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "hygiene",
       "urinaire"
@@ -1268,7 +1006,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 6 /Fiche 6.2 —  Maladies rhumatologiques.pdf",
     "source": "Fiche 6",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "locomoteur"
     ]
@@ -1279,7 +1016,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 6 /Fiche 6.3 — Maladies urologiques.pdf",
     "source": "Fiche 6",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "urinaire"
     ]
@@ -1290,7 +1026,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 6 /Fiche 6.4 — Maladies sensitives.pdf",
     "source": "Fiche 6",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "revision"
     ]
@@ -1301,7 +1036,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 6 /Fiche 6.5 — Complications du décubitus.pdf",
     "source": "Fiche 6",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "urgence"
     ]
@@ -1312,7 +1046,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 7 Bloc 5 – Module 10 – Travail en équipe pluriprofessionnelle.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -1323,7 +1056,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 8 Bloc 5 – Module 10 – Travail en équipe.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -1334,7 +1066,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/FICHE 9 Bloc 5 – Module 10 – Travail en équipe pluriprofessionnelle.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "equipe"
     ]
@@ -1345,7 +1076,6 @@ window.DEA_FICHES = [
     "path": "Autre fiche de révisoin/Fiche Anatomie – Os Du Crâne.pdf",
     "source": "Autre fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "locomoteur",
       "anatomie"
@@ -1357,7 +1087,6 @@ window.DEA_FICHES = [
     "path": "Autre fiche de révisoin/Fiche Anatomie – Reste Du Corps.pdf",
     "source": "Autre fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "anatomie"
     ]
@@ -1368,7 +1097,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/FIche 5 Bilan/fiche_bilan SD.pdf",
     "source": "FIche 5 Bilan",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan"
     ]
@@ -1379,7 +1107,6 @@ window.DEA_FICHES = [
     "path": "Autre fiche de révisoin/Fiche De Révision – Le Squelette (vision Terrain).pdf",
     "source": "Autre fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "locomoteur"
     ]
@@ -1390,7 +1117,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 7 digestifs/Fiche_DEA_Appareil_digestif_Bloc2_Module4.docx",
     "source": "Fiche 7 digestifs",
     "format": "DOCX",
-    "isSupport": false,
     "tags": [
       "digestif",
       "anatomie"
@@ -1402,7 +1128,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 9 reproducteur/Fiche_DEA_Appareil_reproducteur_Bloc2_Module4.docx",
     "source": "Fiche 9 reproducteur",
     "format": "DOCX",
-    "isSupport": false,
     "tags": [
       "reproducteur",
       "anatomie"
@@ -1414,7 +1139,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 8 urinaire/Fiche_DEA_Appareil_urinaire_Bloc2_Module4.docx",
     "source": "Fiche 8 urinaire",
     "format": "DOCX",
-    "isSupport": false,
     "tags": [
       "urinaire",
       "anatomie"
@@ -1426,7 +1150,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 3 APPAREIL RESPIRATOIRE/Fiche récap ultra — Pathologies respiratoires.pdf",
     "source": "Fiche 3 APPAREIL RESPIRATOIRE",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "respiratoire",
       "anatomie"
@@ -1438,7 +1161,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 6 /Fiches 6.6 Chutes et conséquences.pdf",
     "source": "Fiche 6",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "locomoteur"
     ]
@@ -1449,7 +1171,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/Gestion du conflit/Fin de vie et soins palliatifs.pdf",
     "source": "Gestion du conflit",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication",
       "hygiene"
@@ -1461,7 +1182,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/Gestion du conflit/Gestion de conflit.pdf",
     "source": "Gestion du conflit",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
     ]
@@ -1472,7 +1192,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/La_medicalisation_du_transport.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "transport"
     ]
@@ -1483,7 +1202,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 4  Appareil Neurologique Et Locomoteur/Le système cérébro-spinal.pdf",
     "source": "Fiche 4 Appareil Neurologique Et Locomoteur",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "neurologique",
       "locomoteur",
@@ -1497,7 +1215,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/Gestion du conflit/Les composantes d’un conflit.pdf",
     "source": "Gestion du conflit",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
     ]
@@ -1508,7 +1225,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/Gestion du conflit/Les différentes attitudes dans un conflit.pdf",
     "source": "Gestion du conflit",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
     ]
@@ -1519,7 +1235,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/Gestion du conflit/Les origines d’un conflit.pdf",
     "source": "Gestion du conflit",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
     ]
@@ -1530,7 +1245,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 4  Appareil Neurologique Et Locomoteur/Les principaux os.pdf",
     "source": "Fiche 4 Appareil Neurologique Et Locomoteur",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "neurologique",
       "locomoteur",
@@ -1544,7 +1258,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/Gestion du conflit/Négligence et maltraitance.pdf",
     "source": "Gestion du conflit",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication"
     ]
@@ -1555,7 +1268,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 4  Appareil Neurologique Et Locomoteur/Neurone et transmission de l’influx nerveux.pdf",
     "source": "Fiche 4 Appareil Neurologique Et Locomoteur",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "bilan",
       "neurologique",
@@ -1570,7 +1282,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 4  Appareil Neurologique Et Locomoteur/Notion d’arc réflexe.pdf",
     "source": "Fiche 4 Appareil Neurologique Et Locomoteur",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "neurologique",
       "locomoteur",
@@ -1584,7 +1295,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 4  Appareil Neurologique Et Locomoteur/Os et articulations.pdf",
     "source": "Fiche 4 Appareil Neurologique Et Locomoteur",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "neurologique",
       "locomoteur",
@@ -1598,7 +1308,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 4  Appareil Neurologique Et Locomoteur/Physiopathologie des maladies neurologiques.pdf",
     "source": "Fiche 4 Appareil Neurologique Et Locomoteur",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "neurologique",
       "locomoteur",
@@ -1612,7 +1321,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Physiopathologie_digestive_urinaire_simplifiee_Bloc2_Module4 1.docx",
     "source": "Fiche de revision Bloc 2 module 4",
     "format": "DOCX",
-    "isSupport": false,
     "tags": [
       "digestif",
       "urinaire",
@@ -1625,7 +1333,6 @@ window.DEA_FICHES = [
     "path": "Bloc 1 module 1/fiche révision B1M1/Gestion du conflit/Procédure de signalement et aspects réglementaires.pdf",
     "source": "Gestion du conflit",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "communication",
       "droits"
@@ -1637,7 +1344,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 4  Appareil Neurologique Et Locomoteur/Système musculaire et paquets vasculo-nerveux.pdf",
     "source": "Fiche 4 Appareil Neurologique Et Locomoteur",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "neurologique",
       "locomoteur",
@@ -1651,7 +1357,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 4  Appareil Neurologique Et Locomoteur/Système nerveux végétatif.pdf",
     "source": "Fiche 4 Appareil Neurologique Et Locomoteur",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "neurologique",
       "locomoteur",
@@ -1665,7 +1370,6 @@ window.DEA_FICHES = [
     "path": "Bloc 2 Module 4/Fiche de révisio n Bloc 2 module 4/Fiche 4  Appareil Neurologique Et Locomoteur/Système neurologique.pdf",
     "source": "Fiche 4 Appareil Neurologique Et Locomoteur",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "neurologique",
       "locomoteur",
@@ -1679,7 +1383,6 @@ window.DEA_FICHES = [
     "path": "Autre fiche de révisoin/Thrombose veineuse profonde (TVP).pdf",
     "source": "Autre fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "circulatoire"
     ]
@@ -1690,7 +1393,6 @@ window.DEA_FICHES = [
     "path": "Bloc 5 Module 10/Fiche de révisoin/Transport_hors_PMT`.pdf",
     "source": "Fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "transport"
     ]
@@ -1701,121 +1403,13 @@ window.DEA_FICHES = [
     "path": "Autre fiche de révisoin/Type de transport.pdf",
     "source": "Autre fiche de revision",
     "format": "PDF",
-    "isSupport": false,
     "tags": [
       "transport"
-    ]
-  },
-  {
-    "id": "fiche-dfef6ebcb4",
-    "title": "BLOC 1 MODULE 1 établir une communication adaptée our informer et accompagner le patient et son entourage",
-    "path": "Bloc 1 module 1/BLOC 1 MODULE 1 établir une communication adaptée our informer et accompagner le patient et son entourage.pdf",
-    "source": "Bloc 1 module 1",
-    "format": "PDF",
-    "isSupport": true,
-    "tags": [
-      "communication"
-    ]
-  },
-  {
-    "id": "fiche-f666ba518c",
-    "title": "BLOC 1 MODULE 2 accompagnement du patient dans son installation et ses déplacements",
-    "path": "Bloc 1 Module 2/BLOC 1 MODULE 2 accompagnement du patient dans son installation et ses déplacements.pdf",
-    "source": "Bloc 1 Module 2",
-    "format": "PDF",
-    "isSupport": true,
-    "tags": [
-      "manutention"
-    ]
-  },
-  {
-    "id": "fiche-9d82259661",
-    "title": "BLOC 1 MODULE 3 mettre en oeuvre des soins d'hygiène et de confort adaptés au besoin et à la situation du patient",
-    "path": "Bloc 1 module 3/BLOC 1 MODULE 3 mettre en oeuvre des soins d'hygiène et de confort adaptés au besoin et à la situation du patient.pdf",
-    "source": "Bloc 1 module 3",
-    "format": "PDF",
-    "isSupport": true,
-    "tags": [
-      "hygiene"
-    ]
-  },
-  {
-    "id": "fiche-a968695cad",
-    "title": "BLOC 2 MODULE 4 appréciation de l'état clinique du patient",
-    "path": "Bloc 2 Module 4/BLOC 2 MODULE 4 appréciation de l'état clinique du patient.pdf",
-    "source": "Bloc 2 Module 4",
-    "format": "PDF",
-    "isSupport": true,
-    "tags": [
-      "revision"
-    ]
-  },
-  {
-    "id": "fiche-3ade5fef76",
-    "title": "BLOC 2 MODULE 5 mise en oeuvre de soins notamment ceux relevant de l'urgence",
-    "path": "Bloc 2 Module 5/BLOC 2 MODULE 5 mise en oeuvre de soins notamment ceux relevant de l'urgence.pdf",
-    "source": "Bloc 2 Module 5",
-    "format": "PDF",
-    "isSupport": true,
-    "tags": [
-      "hygiene",
-      "urgence"
-    ]
-  },
-  {
-    "id": "fiche-e1f3e19f7c",
-    "title": "BLOC 4 MODULE 8 entretien des matériels et des installations du véhicule adapté au transport sanitaire terrestre et prévention des risques associés",
-    "path": "Bloc 4 Module 8/BLOC 4 MODULE 8 entretien des matériels et des installations du véhicule adapté au transport sanitaire terrestre et prévention des risques associés.pdf",
-    "source": "Bloc 4 Module 8",
-    "format": "PDF",
-    "isSupport": true,
-    "tags": [
-      "manutention",
-      "transport",
-      "urgence",
-      "materiel"
-    ]
-  },
-  {
-    "id": "fiche-da14a9d622",
-    "title": "Bloc 5 – Module 9 Récap Ultra‑flash",
-    "path": "Bloc 5 Module 9/Bloc 5 – Module 9 _ Récap Ultra‑flash.pdf",
-    "source": "Bloc 5 Module 9",
-    "format": "PDF",
-    "isSupport": true,
-    "tags": [
-      "revision"
-    ]
-  },
-  {
-    "id": "fiche-241e5fb86c",
-    "title": "BLOC 5 MODULE 10 travail en équipe pluriprofessionnelle",
-    "path": "Bloc 5 Module 10/BLOC 5 MODULE 10 travail en équipe pluriprofessionnelle.pdf",
-    "source": "Bloc 5 Module 10",
-    "format": "PDF",
-    "isSupport": true,
-    "tags": [
-      "equipe"
-    ]
-  },
-  {
-    "id": "fiche-444e904cf4",
-    "title": "BLOC 5 MODULE 9 E SANTE 2025 travail en équipe et traitement des informations",
-    "path": "Bloc 5 Module 9/BLOC 5 MODULE 9 E SANTE 2025 travail en équipe et traitement des informations.pdf",
-    "source": "Bloc 5 Module 9",
-    "format": "PDF",
-    "isSupport": true,
-    "tags": [
-      "e-sante",
-      "equipe",
-      "traitements"
     ]
   }
 ];
 window.DEA_INDEX_INFO = {
-  "generatedAt": "2026-05-27T12:51:12.121Z",
-  "total": 158,
-  "ignored": [
-    " .pdf"
-  ]
+  "generatedAt": "2026-05-27T13:45:33.451Z",
+  "total": 134,
+  "excludedCount": 25
 };

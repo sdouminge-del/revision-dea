@@ -8,7 +8,6 @@
   const el = {
     searchInput: document.getElementById("searchInput"),
     themeFilter: document.getElementById("themeFilter"),
-    includeSupports: document.getElementById("includeSupports"),
     ficheList: document.getElementById("ficheList"),
     visibleCount: document.getElementById("visibleCount"),
     knownCount: document.getElementById("knownCount"),
@@ -39,7 +38,6 @@
     filter: "all",
     theme: "all",
     query: "",
-    includeSupports: false,
     session: [],
     sessionIndex: 0,
     records: loadRecords()
@@ -61,11 +59,6 @@
 
     el.themeFilter.addEventListener("change", function (event) {
       app.theme = event.target.value;
-      renderAll();
-    });
-
-    el.includeSupports.addEventListener("change", function (event) {
-      app.includeSupports = event.target.checked;
       renderAll();
     });
 
@@ -176,7 +169,6 @@
     const query = normalizeText(app.query);
     return fiches.filter(function (fiche) {
       const record = getRecord(fiche.id);
-      if (!app.includeSupports && fiche.isSupport) return false;
       if (app.theme !== "all" && !(fiche.tags || []).includes(app.theme)) return false;
       if (app.filter === "todo" && record.status !== "todo") return false;
       if (app.filter === "learning" && record.status !== "learning") return false;
@@ -203,9 +195,7 @@
   }
 
   function renderStats(visible) {
-    const revisionFiches = fiches.filter(function (fiche) {
-      return !fiche.isSupport;
-    });
+    const revisionFiches = fiches;
     const known = revisionFiches.filter(function (fiche) {
       return getRecord(fiche.id).status === "known";
     }).length;
@@ -251,14 +241,12 @@
 
       const source = fiche.source || "Dossier";
       const favorite = record.favorite ? "Favori" : "";
-      const support = fiche.isSupport ? "Support complet" : "Fiche";
-
       button.innerHTML = [
         "<span class=\"fiche-item-title\">" + escapeHtml(fiche.title) + "</span>",
         "<span class=\"fiche-item-meta\">",
         "<span class=\"status-dot " + escapeHtml(record.status) + "\"></span>",
         "<span>" + escapeHtml(statusLabel(record.status)) + "</span>",
-        "<span>" + escapeHtml(support) + "</span>",
+        "<span>Fiche</span>",
         favorite ? "<span>" + favorite + "</span>" : "",
         "</span>",
         "<span class=\"fiche-item-meta\">" + escapeHtml(source) + "</span>"
@@ -329,7 +317,7 @@
     if (!app.session.length) {
       el.quizTitle.textContent = "Tout est acquis";
       el.quizCounter.textContent = "0/0";
-      el.quizQuestion.textContent = "Tu peux inclure les supports complets ou remettre certaines fiches en cours pour relancer une session.";
+      el.quizQuestion.textContent = "Remets certaines fiches en cours ou a revoir pour relancer une session.";
       el.quizAnswer.classList.add("is-hidden");
       return;
     }

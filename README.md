@@ -11,7 +11,7 @@ http://127.0.0.1:4174/application-dea/index.html
 ## Ce que fait l'application
 
 - Affiche les fiches individuelles en priorite.
-- Masque par defaut les gros supports complets nommes comme des blocs.
+- Reference uniquement les fiches de revision, sans les supports Bloc complets.
 - Permet de chercher par mot-cle, theme ou statut.
 - Garde la progression dans le navigateur : a revoir, en cours, acquise, favoris et notes.
 - Propose un quiz oral sur les fiches visibles.
