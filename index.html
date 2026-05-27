@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Revision DEA</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Bibliotheque de fiches">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">DEA</span>
+          <div>
+            <h1>Revision DEA</h1>
+            <p>Fiches, quiz et suivi</p>
+          </div>
+        </div>
+
+        <label class="search-box">
+          <span>Rechercher une fiche</span>
+          <input id="searchInput" type="search" placeholder="douleur, bilan, transport..." autocomplete="off">
+        </label>
+
+        <div class="filter-group" aria-label="Statut">
+          <button class="filter-pill is-active" type="button" data-filter="all">Toutes</button>
+          <button class="filter-pill" type="button" data-filter="todo">A revoir</button>
+          <button class="filter-pill" type="button" data-filter="learning">En cours</button>
+          <button class="filter-pill" type="button" data-filter="known">Acquises</button>
+          <button class="filter-pill" type="button" data-filter="favorite">Favoris</button>
+        </div>
+
+        <label class="field">
+          <span>Theme</span>
+          <select id="themeFilter"></select>
+        </label>
+
+        <label class="toggle-row">
+          <input id="includeSupports" type="checkbox">
+          <span>Inclure les supports complets</span>
+        </label>
+
+        <div class="sidebar-stats" aria-live="polite">
+          <div>
+            <strong id="visibleCount">0</strong>
+            <span>fiches visibles</span>
+          </div>
+          <div>
+            <strong id="knownCount">0</strong>
+            <span>acquises</span>
+          </div>
+        </div>
+
+        <div id="ficheList" class="fiche-list" aria-label="Liste des fiches"></div>
+      </aside>
+
+      <main class="workspace">
+        <section class="topbar" aria-label="Tableau de bord">
+          <div>
+            <p class="eyebrow">Objectif du jour</p>
+            <h2 id="todayTitle">10 fiches a travailler</h2>
+          </div>
+          <div class="progress-wrap" aria-label="Progression">
+            <div class="progress-label">
+              <span>Progression globale</span>
+              <strong id="progressLabel">0%</strong>
+            </div>
+            <div class="progress-track">
+              <span id="progressBar"></span>
+            </div>
+          </div>
+          <button id="startSessionBtn" class="primary-action" type="button">Lancer un quiz</button>
+        </section>
+
+        <section class="study-layout">
+          <article class="study-panel" aria-live="polite">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow" id="activeSource">Fiche selectionnee</p>
+                <h2 id="activeTitle">Choisis une fiche pour commencer</h2>
+              </div>
+              <button id="favoriteBtn" class="icon-button" type="button" aria-label="Ajouter aux favoris">☆</button>
+            </div>
+
+            <div id="tagList" class="tag-list"></div>
+
+            <div class="action-row">
+              <a id="openDocBtn" class="secondary-action is-disabled" href="#" target="_blank" rel="noreferrer">Ouvrir la fiche</a>
+              <button id="markTodoBtn" class="status-action" type="button" data-status="todo">A revoir</button>
+              <button id="markLearningBtn" class="status-action" type="button" data-status="learning">En cours</button>
+              <button id="markKnownBtn" class="status-action" type="button" data-status="known">Acquise</button>
+            </div>
+
+            <div class="revision-card">
+              <div>
+                <p class="eyebrow">Methode rapide</p>
+                <h3>Lire, cacher, expliquer</h3>
+              </div>
+              <ol id="methodList"></ol>
+            </div>
+
+            <label class="notes-field">
+              <span>Mes notes sur cette fiche</span>
+              <textarea id="notesInput" rows="7" placeholder="Points a revoir, erreurs frequentes, moyens mnemo..."></textarea>
+            </label>
+          </article>
+
+          <aside class="quiz-panel" aria-label="Quiz de revision">
+            <div class="panel-head compact">
+              <div>
+                <p class="eyebrow">Quiz oral</p>
+                <h2 id="quizTitle">Pret quand tu veux</h2>
+              </div>
+              <span id="quizCounter" class="counter">0/0</span>
+            </div>
+
+            <div class="quiz-question" id="quizQuestion">
+              Lance un quiz pour t'interroger sur tes fiches a revoir.
+            </div>
+
+            <div id="quizAnswer" class="quiz-answer is-hidden"></div>
+
+            <div class="quiz-actions">
+              <button id="showAnswerBtn" class="secondary-action" type="button">Voir les points attendus</button>
+              <button id="missedBtn" class="status-action" type="button">A revoir</button>
+              <button id="passedBtn" class="primary-action" type="button">Je sais</button>
+            </div>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="data.js?v=1"></script>
+    <script src="app.js?v=3"></script>
+  </body>
+</html>
