@@ -8,12 +8,17 @@
   const el = {
     searchInput: document.getElementById("searchInput"),
     themeFilter: document.getElementById("themeFilter"),
+    selectedBlockName: document.getElementById("selectedBlockName"),
+    selectedBlockSummary: document.getElementById("selectedBlockSummary"),
+    clearBlockBtn: document.getElementById("clearBlockBtn"),
+    blockGrid: document.getElementById("blockGrid"),
     ficheList: document.getElementById("ficheList"),
     visibleCount: document.getElementById("visibleCount"),
     knownCount: document.getElementById("knownCount"),
     progressLabel: document.getElementById("progressLabel"),
     progressBar: document.getElementById("progressBar"),
     todayTitle: document.getElementById("todayTitle"),
+    installAppBtn: document.getElementById("installAppBtn"),
     activeSource: document.getElementById("activeSource"),
     activeTitle: document.getElementById("activeTitle"),
     tagList: document.getElementById("tagList"),
@@ -30,16 +35,19 @@
     quizAnswer: document.getElementById("quizAnswer"),
     showAnswerBtn: document.getElementById("showAnswerBtn"),
     missedBtn: document.getElementById("missedBtn"),
-    passedBtn: document.getElementById("passedBtn")
+    passedBtn: document.getElementById("passedBtn"),
+    mobileNavButtons: Array.from(document.querySelectorAll("[data-mobile-view]"))
   };
 
   const app = {
     selectedId: "",
     filter: "all",
     theme: "all",
+    block: "all",
     query: "",
     session: [],
     sessionIndex: 0,
+    installPrompt: null,
     records: loadRecords()
   };
 
@@ -60,6 +68,12 @@
     el.themeFilter.addEventListener("change", function (event) {
       app.theme = event.target.value;
       renderAll();
+    });
+
+    el.clearBlockBtn.addEventListener("click", function () {
+      app.block = "all";
+      renderAll();
+      setMobileView("blocks");
     });
 
     el.filterButtons.forEach(function (button) {
@@ -100,6 +114,26 @@
     });
     el.passedBtn.addEventListener("click", function () {
       answerCurrent("known");
+    });
+
+    el.installAppBtn.addEventListener("click", async function () {
+      if (!app.installPrompt) return;
+      app.installPrompt.prompt();
+      await app.installPrompt.userChoice;
+      app.installPrompt = null;
+      el.installAppBtn.classList.add("is-hidden");
+    });
+
+    window.addEventListener("beforeinstallprompt", function (event) {
+      event.preventDefault();
+      app.installPrompt = event;
+      el.installAppBtn.classList.remove("is-hidden");
+    });
+
+    el.mobileNavButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        setMobileView(button.dataset.mobileView);
+      });
     });
   }
 
@@ -152,11 +186,13 @@
 
   function renderAll() {
     syncFilterButtons();
+    renderBlockCards();
     const visible = getVisibleFiches();
     ensureSelection(visible);
     renderStats(visible);
     renderFicheList(visible);
     renderActiveFiche();
+    renderSelectedBlock();
   }
 
   function syncFilterButtons() {
@@ -169,6 +205,7 @@
     const query = normalizeText(app.query);
     return fiches.filter(function (fiche) {
       const record = getRecord(fiche.id);
+      if (app.block !== "all" && getBlockKey(fiche) !== app.block) return false;
       if (app.theme !== "all" && !(fiche.tags || []).includes(app.theme)) return false;
       if (app.filter === "todo" && record.status !== "todo") return false;
       if (app.filter === "learning" && record.status !== "learning") return false;
@@ -195,7 +232,9 @@
   }
 
   function renderStats(visible) {
-    const revisionFiches = fiches;
+    const revisionFiches = app.block === "all" ? fiches : fiches.filter(function (fiche) {
+      return getBlockKey(fiche) === app.block;
+    });
     const known = revisionFiches.filter(function (fiche) {
       return getRecord(fiche.id).status === "known";
     }).length;
@@ -212,9 +251,50 @@
     el.progressBar.style.width = percent + "%";
     el.todayTitle.textContent = Math.min(DEFAULT_SESSION_SIZE, due) + " fiches a travailler";
 
+    if (app.block !== "all") {
+      el.todayTitle.textContent = getBlockLabelByKey(app.block) + " : " + Math.min(DEFAULT_SESSION_SIZE, due) + " fiches a travailler";
+    }
+
     if (learning > 0 && due > 0) {
       el.todayTitle.textContent = Math.min(DEFAULT_SESSION_SIZE, due) + " fiches, dont " + learning + " en cours";
+      if (app.block !== "all") {
+        el.todayTitle.textContent = getBlockLabelByKey(app.block) + " : " + Math.min(DEFAULT_SESSION_SIZE, due) + " fiches, dont " + learning + " en cours";
+      }
     }
+  }
+
+  function renderBlockCards() {
+    const groups = buildBlockSummaries();
+    el.blockGrid.innerHTML = "";
+
+    groups.forEach(function (group) {
+      const button = document.createElement("button");
+      button.className = "block-card";
+      button.type = "button";
+      button.classList.toggle("is-active", group.key === app.block);
+      button.addEventListener("click", function () {
+        app.block = group.key;
+        app.query = "";
+        el.searchInput.value = "";
+        renderAll();
+        setMobileView("library");
+      });
+
+      button.innerHTML = [
+        "<span class=\"block-card-kicker\">" + escapeHtml(group.kicker) + "</span>",
+        "<span class=\"block-card-title\">" + escapeHtml(group.label) + "</span>",
+        "<span class=\"block-card-meta\">" + group.total + " fiches · " + group.known + " acquises</span>",
+        "<span class=\"block-gauge\" aria-hidden=\"true\"><span style=\"width:" + group.percent + "%\"></span></span>",
+        "<span class=\"block-card-foot\"><strong>" + group.percent + "%</strong><span>" + group.todo + " a revoir</span></span>"
+      ].join("");
+      el.blockGrid.appendChild(button);
+    });
+  }
+
+  function renderSelectedBlock() {
+    const summary = app.block === "all" ? null : getBlockSummary(app.block);
+    el.selectedBlockName.textContent = summary ? summary.label : "Tous les blocs";
+    el.selectedBlockSummary.classList.toggle("is-filtered", Boolean(summary));
   }
 
   function renderFicheList(visible) {
@@ -237,6 +317,7 @@
       button.addEventListener("click", function () {
         app.selectedId = fiche.id;
         renderAll();
+        setMobileView("study");
       });
 
       const source = fiche.source || "Dossier";
@@ -325,6 +406,7 @@
     app.selectedId = app.session[0].id;
     renderAll();
     renderQuizQuestion();
+    setMobileView("quiz");
   }
 
   function renderQuizQuestion() {
@@ -455,6 +537,97 @@
   function findFiche(id) {
     return fiches.find(function (fiche) {
       return fiche.id === id;
+    });
+  }
+
+  function buildBlockSummaries() {
+    const map = new Map();
+    fiches.forEach(function (fiche) {
+      const key = getBlockKey(fiche);
+      if (!map.has(key)) {
+        map.set(key, {
+          key: key,
+          label: getBlockLabel(fiche),
+          kicker: getBlockKicker(fiche),
+          total: 0,
+          known: 0,
+          learning: 0,
+          todo: 0,
+          percent: 0
+        });
+      }
+
+      const group = map.get(key);
+      const status = getRecord(fiche.id).status;
+      group.total += 1;
+      if (status === "known") group.known += 1;
+      else if (status === "learning") group.learning += 1;
+      else group.todo += 1;
+    });
+
+    const groups = Array.from(map.values());
+    groups.forEach(function (group) {
+      group.percent = group.total ? Math.round((group.known / group.total) * 100) : 0;
+    });
+
+    return groups.sort(function (a, b) {
+      return blockRank(a.key) - blockRank(b.key) || a.label.localeCompare(b.label, "fr");
+    });
+  }
+
+  function getBlockSummary(key) {
+    return buildBlockSummaries().find(function (group) {
+      return group.key === key;
+    });
+  }
+
+  function getBlockKey(fiche) {
+    const first = (fiche.path || "").split("/")[0] || "autres";
+    return normalizeText(first).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "autres";
+  }
+
+  function getBlockLabelByKey(key) {
+    const summary = getBlockSummary(key);
+    return summary ? summary.label : "Selection";
+  }
+
+  function getBlockLabel(fiche) {
+    const first = (fiche.path || "").split("/")[0] || "Autres fiches";
+    const normalized = normalizeText(first);
+    if (normalized === "autre fiche de revisoin") return "Autres fiches";
+    if (normalized === "fiche a 5") return "Fiches A5";
+    if (normalized.includes("thermes")) return "Thermes medical";
+    return first.replace(/\bmodule\b/i, "Module").replace(/\bbloc\b/i, "Bloc");
+  }
+
+  function getBlockKicker(fiche) {
+    const label = getBlockLabel(fiche);
+    if (label.indexOf("Bloc") === 0) return "Module DEA";
+    if (label === "Fiches A5") return "Format rapide";
+    return "Revision";
+  }
+
+  function blockRank(key) {
+    const ranks = {
+      "bloc-1-module-1": 10,
+      "bloc-1-module-2": 20,
+      "bloc-1-module-3": 30,
+      "bloc-2-module-4": 40,
+      "bloc-2-module-5": 50,
+      "bloc-4-module-8": 60,
+      "bloc-5-module-9": 70,
+      "bloc-5-module-10": 80,
+      "fiche-a-5": 90,
+      "a5-thermes-medical-1-pdf": 95,
+      "autre-fiche-de-revisoin": 100
+    };
+    return ranks[key] || 999;
+  }
+
+  function setMobileView(view) {
+    document.body.dataset.mobileView = view;
+    el.mobileNavButtons.forEach(function (button) {
+      button.classList.toggle("is-active", button.dataset.mobileView === view);
     });
   }
 

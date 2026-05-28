@@ -3,10 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#137d6d">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Revision DEA">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <title>Revision DEA</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.svg">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-mobile-view="blocks">
     <div class="app-shell">
       <aside class="sidebar" aria-label="Bibliotheque de fiches">
         <div class="brand">
@@ -35,6 +42,14 @@
           <select id="themeFilter"></select>
         </label>
 
+        <div id="selectedBlockSummary" class="selected-block-summary">
+          <div>
+            <span>Selection</span>
+            <strong id="selectedBlockName">Tous les blocs</strong>
+          </div>
+          <button id="clearBlockBtn" type="button">Tout voir</button>
+        </div>
+
         <div class="sidebar-stats" aria-live="polite">
           <div>
             <strong id="visibleCount">0</strong>
@@ -50,6 +65,17 @@
       </aside>
 
       <main class="workspace">
+        <section class="block-overview" aria-label="Accueil par blocs">
+          <div class="overview-head">
+            <div>
+              <p class="eyebrow">Plan de revision</p>
+              <h2>Choisis un bloc</h2>
+            </div>
+            <p>Chaque jauge montre ta progression sur les fiches de ce bloc.</p>
+          </div>
+          <div id="blockGrid" class="block-grid"></div>
+        </section>
+
         <section class="topbar" aria-label="Tableau de bord">
           <div>
             <p class="eyebrow">Objectif du jour</p>
@@ -64,6 +90,7 @@
               <span id="progressBar"></span>
             </div>
           </div>
+          <button id="installAppBtn" class="secondary-action install-action is-hidden" type="button">Installer</button>
           <button id="startSessionBtn" class="primary-action" type="button">Lancer un quiz</button>
         </section>
 
@@ -125,7 +152,14 @@
       </main>
     </div>
 
-    <script src="data.js?v=1"></script>
-    <script src="app.js?v=3"></script>
+    <nav class="mobile-nav" aria-label="Navigation mobile">
+      <button class="mobile-nav-button is-active" type="button" data-mobile-view="blocks">Blocs</button>
+      <button class="mobile-nav-button" type="button" data-mobile-view="library">Fiches</button>
+      <button class="mobile-nav-button" type="button" data-mobile-view="study">Fiche</button>
+      <button class="mobile-nav-button" type="button" data-mobile-view="quiz">Quiz</button>
+    </nav>
+
+    <script src="data.js?v=2"></script>
+    <script src="app.js?v=4"></script>
   </body>
 </html>
